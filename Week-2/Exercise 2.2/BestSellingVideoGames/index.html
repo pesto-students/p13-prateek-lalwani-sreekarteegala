@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Selling Video Games</title>
+    <style>
+        :root{
+            --table-color: green;
+            --row-bg-color: #98ef98;
+        }
+        table {
+            text-align: center;
+            margin-bottom: 10px;
+            width: 410px;
+            height: 200px;
+        }
+        caption{
+            background-color: var(--table-color);
+            color: white;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+        tbody tr:nth-child(odd){
+            background-color: var(--row-bg-color);
+        }
+        th, td{
+            padding: 10px;
+        }
+        table,
+        caption {
+            border: 2px solid var(--table-color);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <table>
+            <caption>best-selling video games</caption>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Sales</th>
+                    <th>Release Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Minecraft</td>
+                    <td>176,000,000</td>
+                    <td>November 18, 2011</td>
+                </tr>
+                <tr>
+                    <td>Tetris</td>
+                    <td>170,000,000</td>
+                    <td>June 6, 1984</td>
+                </tr>
+                <tr>
+                    <td>Granf Theft Auto V</td>
+                    <td>110,000,000</td>
+                    <td>September 17, 2013</td>
+                </tr>
+                <tr>
+                    <td>Wii Sports</td>
+                    <td>82,870,000</td>
+                    <td>November 19, 2006</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>Source: <a href="https://en.wikipedia.org/wiki/List_of_best-selling_video_games" target="_blank">Wikipedia</a></footer>
+</body>
+
+</html>
