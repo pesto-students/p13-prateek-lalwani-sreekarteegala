@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reviews</title>
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .checked {
+            color: orange;
+        }
+
+        .form-row {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <h1>Restaurant Reviews</h1>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="add-review.html">Add Review</a>
+                <a href="about.html">About</a>
+            </nav>
+        </header>
+
+        <section>
+            <h2>Add Review</h2>
+            <form action="submit">
+                <div class="form-row">
+                    <label>Name: </label>
+                    <input type="text">
+                </div>
+                <div class="form-row">
+                    <label>Restaurant: </label>
+                    <select name="restaurant" id="addReview">
+                        <option value="" selected>Choose One...</option>
+                        <option value="restaurant1">Restaurant 1</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="date">Date</label>
+                    <input type="date" name="dateTime">
+                </div>
+                <div class="form-row">
+                    <label>Rating</label>
+                    <input type="number" name="noOfBlinks" id="noOfBlinks" value="1" min="1" max="5" />
+                </div>
+                <div class="form-row">
+                    <label>Details: </label>
+                    <textarea name="about" id="about" cols="30" rows="5"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2023 Restaurant Reviews</p>
+        </footer>
+    </main>
+
+</body>
+
+</html>
