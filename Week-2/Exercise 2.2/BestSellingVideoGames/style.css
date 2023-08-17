@@ -1,0 +1,26 @@
+:root{
+    --table-color: green;
+    --row-bg-color: #98ef98;
+}
+table {
+    text-align: center;
+    margin-bottom: 10px;
+    width: 410px;
+    height: 200px;
+}
+caption{
+    background-color: var(--table-color);
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+}
+tbody tr:nth-child(odd){
+    background-color: var(--row-bg-color);
+}
+th, td{
+    padding: 10px;
+}
+table,
+caption {
+    border: 2px solid var(--table-color);
+}
