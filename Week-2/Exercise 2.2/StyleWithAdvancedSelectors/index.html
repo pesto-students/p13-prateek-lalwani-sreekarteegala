@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style With Advanced CSS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <h2>Rate a Product</h2>
+        <p>* indicates required field</p>
+        <form action="submit">
+            <div>
+                <label for="product" class="required">Product</label>
+                <input type="text" name="product" id="product">
+            </div>
+            <div>
+                <label for="purchaseDate" class="required">Purchase Date</label>
+                <input type="date" name="purchaseDate" id="purchaseDate">
+            </div>
+            <div>
+                <label for="rating" class="required">Rating</label>
+                <input type="text" name="rating" id="rating" value="4">
+            </div>
+            <div>
+                <label for="commnets" class="comments required">Comments</label>
+                <textarea name="commnets" id="commnets"></textarea>
+            </div>
+            <div>
+                <button type="submit">Submit Rating</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

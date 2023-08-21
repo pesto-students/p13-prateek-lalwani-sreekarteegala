@@ -1,0 +1,53 @@
+body {
+    font-family: sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 16px;
+    color: #444444;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    border: 1px solid #f1f1f1;
+    text-align: left;
+    padding: 20px 10px;
+    color: #444444;
+}
+
+th {
+    border: 1px solid #f1f1f1;
+    text-align: left;
+    font-size: 12px;
+    padding: 10px;
+    color: #777777;
+}
+
+.container {
+    display: flex;
+    font-size: 13px;
+    margin: 5px;
+}
+
+.table_1 {
+    margin: 0px 25px 0px 0px;
+}
+
+.table_heading {
+    text-align: center;
+    background-color: #00b3b3;
+    font-size: 14px;
+    color: #fff;
+    padding: 15px;
+}
+
+.total_value {
+    font-weight: 600;
+    color: #2222ff;
+}
