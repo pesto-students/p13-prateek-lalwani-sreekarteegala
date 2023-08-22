@@ -74,7 +74,7 @@ header {
    flex-basis: 20%;
 }
 
-.ingredients, .directions  {
+.ingredients, .directions {
    flex-grow: 1;
    flex-basis: 50%;
 }

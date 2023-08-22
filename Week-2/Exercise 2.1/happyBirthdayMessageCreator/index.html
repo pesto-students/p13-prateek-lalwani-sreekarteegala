@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday Message Creator</title>
+    <script src="./script.js" defer></script>
     <style>
         .form-row {
-          display: flex;
-          align-items: center;
-          justify-content: flex-start;
-          margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 10px;
         }
+
         .form-row label {
-          flex-basis: 10%;
-          /* text-align: right; */
-          margin-right: 10px;
+            flex-basis: 10%;
+            /* text-align: right; */
+            margin-right: 10px;
         }
-        
+
         .form-row input {
-          flex-basis: 20%;
+            flex-basis: 20%;
         }
     </style>
 </head>
+
 <body>
     <div>
         <form action="/submit" method="POST" enctype="multipart/form-data">
@@ -36,11 +40,11 @@
             </div>
             <div class="form-row">
                 <label for="date">Date to send: </label>
-                <input type="date" name="date" id="date">
+                <input type="date" name="date" id="date" min="">
             </div>
             <div class="form-row">
                 <label for="msgColor">Message Color: </label>
-                <input type="color" name="color" id="color"/>
+                <input type="color" name="color" id="color" />
             </div>
             <div class="form-row">
                 <label for="noOfBlinks">Number of blinks: </label>
@@ -56,4 +60,5 @@
         </form>
     </div>
 </body>
+
 </html>
