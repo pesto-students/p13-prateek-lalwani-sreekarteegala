@@ -5,64 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS - Arrays</title>
+    <script src="./script.js"></script>
 </head>
 
 <body>
-    <script>
-        function getPromptText(numGuesses) {
-            if (numGuesses === 0) {
-                return "Enter a number between 1 and 100.";
-            } else {
-                return "Enter a number.";
-            }
-        }
-
-        function playGuessingGame(numToGuess, totalGuesses = 10) {
-            let numGuesses = 0;
-
-            while (numGuesses < totalGuesses) {
-                let userGuess = prompt(getPromptText(numGuesses));
-
-                if (userGuess === null) {
-                    return 0; // User Pressed Cancel
-                }
-
-                if (userGuess === "") {
-                    alert("Please enter a number.");
-                    continue;
-                }
-
-                if (isNaN(userGuess)) {
-                    alert("Please enter a valid number.");
-                    continue;
-                }
-
-                userGuess = parseInt(userGuess);
-
-                if (userGuess < numToGuess) {
-                    alert(userGuess + " is too small. Guess a larger number.");
-                    numGuesses++;
-                } else if (userGuess > numToGuess) {
-                    alert(userGuess + " is too large. Guess a smaller number.");
-                    numGuesses++;
-                } else {
-                    numGuesses++;
-                    return numGuesses;
-                }
-            }
-
-            return 0; // User couldnot guess within allowed guesses
-        }
-
-        const numToGuess = 5;
-        const totalGuesses = 10;
-        const result = playGuessingGame(numToGuess, totalGuesses);
-        if (result === 0) {
-            alert("Sorry, you couldn't guess the number within " + totalGuesses + " attempts.");
-        } else {
-            alert("Congratulations! You guessed the number " + numToGuess + " in " + result + " attempts.");
-        }
-    </script>
+    <h1><u>Number Guessing Game</u></h1>
 </body>
 
 </html>
