@@ -10,18 +10,6 @@ class BankAccount {
         this.#accountHolderName = accountHolderName;
     }
 
-    deposit(amount) {
-        this.#bankBalance += amount;
-    }
-
-    withdraw(amount) {
-        if (amount <= this.#bankBalance) {
-            this.#bankBalance -= amount;
-        } else {
-            throw new Error("Withdrawal failed: Insufficient balance");
-        }
-    }
-
     get getAccountNumber() {
         return this.#accountNumber;
     }
@@ -34,12 +22,28 @@ class BankAccount {
         return this.#bankBalance;
     }
 
+    addBankBalance(amount) {
+        this.#bankBalance += amount;
+    }
+
+    withdrawBankBalance(amount) {
+        this.#bankBalance -= amount;
+    }
+
 }
 
 // Creating a Sub Class, as BankAccount as parent class 
 class CheckingAccount extends BankAccount {
     constructor(accountNumber, bankBalance, accountHolderName) {
         super(accountNumber, bankBalance, accountHolderName);
+    }
+
+    deposit(amount) {
+        this.addBankBalance(amount);
+    }
+
+    withdraw(amount) {
+        this.withdrawBankBalance(amount);
     }
 }
 
@@ -48,11 +52,23 @@ class SavingsAccount extends BankAccount {
     constructor(accountNumber, bankBalance, accountHolderName) {
         super(accountNumber, bankBalance, accountHolderName);
     }
+
+    deposit(amount) {
+        this.addBankBalance(amount);
+    }
+
+    withdraw(amount) {
+        if (amount <= this.getBankBalance) {
+            this.withdrawBankBalance(amount);
+        } else {
+            throw new Error("Withdrawal failed: Insufficient balance");
+        }
+    }
 }
 
 // Creating instance of two subClasses
 const checkingAcc = new CheckingAccount("C12345", 1000, "Prashanth");
-const savingsAcc = new CheckingAccount("S54321", 500, "Varma");
+const savingsAcc = new SavingsAccount("S54321", 500, "Varma");
 
 // Printing final scenario
 console.log("Checking Account Created");
@@ -83,4 +99,3 @@ savingsAcc.withdraw(500);
 console.log("balance: ", savingsAcc.getBankBalance); // Expected output: balance 1500
 
 // savingsAcc.withdraw(1600);
-
