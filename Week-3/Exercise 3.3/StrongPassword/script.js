@@ -1,6 +1,11 @@
 const pwd = document.getElementById('pwd')
 const confirmPwd = document.getElementById('confirmPwd')
 const errorNode = document.getElementById('error');
+const commonPwds = [
+    "password",
+    "12345678",
+    "87654321"
+]
 
 function isStrongPassword(pwd) {
     if (pwd.length < 8) {
@@ -9,6 +14,10 @@ function isStrongPassword(pwd) {
 
     if (pwd.includes("password")) {
         return "Password Contains Text 'password'";
+    }
+
+    if (commonPwds.includes(pwd)) {
+        return "Most commonly used Password - Try with different password";
     }
 
     if (!/[A-Z]/.test(pwd)) {
@@ -26,8 +35,9 @@ document.getElementById('button').addEventListener('click', (e) => {
         errorNode.innerHTML = 'Passwords Does not match';
         errorNode.style.color = "red";
     } else {
-        errorNode.innerHTML = isStrongPassword(pwd.value);
-        errorNode.style.color = "green";
+        let pwdStrength = isStrongPassword(pwd.value);
+        errorNode.innerHTML = pwdStrength;
+        errorNode.style.color = pwdStrength !== "Password is Strong" ? "red" : "green";
     }
 })
 
