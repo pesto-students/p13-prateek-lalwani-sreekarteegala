@@ -1,0 +1,33 @@
+<h3 class="code-line" data-line-start=0 data-line-end=1 ><a id="Situation_You_want_to_inspect_the_HTML_and_CSS_code_of_a_webpage_0"></a>Situation: You want to inspect the HTML and CSS code of a webpage.</h3>
+<h3 class="code-line" data-line-start=1 data-line-end=2 ><a id="Question_Which_panel_in_Chrome_DevTools_should_you_use_to_inspect_the_DOM_and_CSS_of_a_webpage_1"></a>Question: Which panel in Chrome DevTools should you use to inspect the DOM and CSS of a webpage?</h3>
+<pre><code>To inspect HTML and CSS in dev tools inspect &quot;Elements&quot; panel
+</code></pre>
+<h3 class="code-line" data-line-start=5 data-line-end=6 ><a id="Situation_You_suspect_that_a_particular_JavaScript_function_is_causing_errors_on_a_webpage_5"></a>Situation: You suspect that a particular JavaScript function is causing errors on a webpage.</h3>
+<h3 class="code-line" data-line-start=6 data-line-end=7 ><a id="Question_Which_panel_in_Chrome_DevTools_should_you_use_to_debug_the_JavaScript_code_on_a_webpage_6"></a>Question: Which panel in Chrome DevTools should you use to debug the JavaScript code on a webpage?</h3>
+<pre><code>Answer: To debug jsvascript code on chrome DevTools we need to go to &quot;sources&quot; panel. This allows to debug and set breakpoints for javascript code.
+</code></pre>
+<h3 class="code-line" data-line-start=10 data-line-end=11 ><a id="Situation_You_want_to_analyze_the_network_traffic_of_a_webpage_and_find_out_which_requests_are_taking_the_longest_time_to_load_10"></a>Situation: You want to analyze the network traffic of a webpage and find out which requests are taking the longest time to load.</h3>
+<h3 class="code-line" data-line-start=11 data-line-end=12 ><a id="Question_Which_panel_in_Chrome_DevTools_should_you_use_to_analyze_the_network_requests_and_responses_of_a_webpage_11"></a>Question: Which panel in Chrome DevTools should you use to analyze the network requests and responses of a webpage?</h3>
+<pre><code>In order to analyzie the network requests and res of webpage and identify which requests are taking longer period to load, we should utilize the &quot;Network&quot; panel in DevTools.
+</code></pre>
+<h3 class="code-line" data-line-start=15 data-line-end=16 ><a id="Situation_You_want_to_inspect_and_manipulate_browser_storage_such_as_cookies_and_local_storage_15"></a>Situation: You want to inspect and manipulate browser storage, such as cookies and local storage.</h3>
+<h3 class="code-line" data-line-start=16 data-line-end=17 ><a id="Question_Which_panel_in_Chrome_DevTools_should_you_use_to_inspect_and_manipulate_browser_storage_on_a_webpage_16"></a>Question: Which panel in Chrome DevTools should you use to inspect and manipulate browser storage on a webpage?</h3>
+<pre><code>We should utilize &quot;Application&quot; panel in chrome DevTools to inspect and manipulate browser storage and cookies.
+</code></pre>
+<h3 class="code-line" data-line-start=20 data-line-end=21 ><a id="Situation_You_want_to_optimize_the_performance_of_a_webpage_and_identify_potential_bottlenecks_20"></a>Situation: You want to optimize the performance of a webpage and identify potential bottlenecks.</h3>
+<h3 class="code-line" data-line-start=21 data-line-end=22 ><a id="Question_Which_panel_in_Chrome_DevTools_should_you_use_to_analyze_the_performance_of_a_webpage_and_identify_potential_bottlenecks_21"></a>Question: Which panel in Chrome DevTools should you use to analyze the performance of a webpage and identify potential bottlenecks?</h3>
+<pre><code>To analyze the performance of a webpage and identify potential bottlenecks, we should use the &quot;Performance&quot; panel in Chrome DevTools.
+</code></pre>
+<h3 class="code-line" data-line-start=25 data-line-end=26 ><a id="Situation_You_want_to_test_the_security_of_a_webpage_and_check_if_it_has_any_vulnerabilities_25"></a>Situation: You want to test the security of a webpage and check if it has any vulnerabilities.</h3>
+<h3 class="code-line" data-line-start=26 data-line-end=27 ><a id="Question_Which_panel_in_Chrome_DevTools_should_you_use_to_analyze_the_security_of_a_webpage_and_identify_potential_vulnerabilities_26"></a>Question: Which panel in Chrome DevTools should you use to analyze the security of a webpage and identify potential vulnerabilities?</h3>
+<pre><code>In order to analyzie the security of webpage and identify potential vulnerabilities, we should utilize the &quot;Security&quot; panel in DevTools.
+</code></pre>
+<h3 class="code-line" data-line-start=30 data-line-end=31 ><a id="Situation_You_want_to_view_and_modify_the_CSS_styles_of_a_webpage_in_realtime_30"></a>Situation: You want to view and modify the CSS styles of a webpage in real-time.</h3>
+<h3 class="code-line" data-line-start=31 data-line-end=32 ><a id="Question_Which_panel_in_Chrome_DevTools_should_you_use_to_view_and_modify_the_CSS_styles_of_a_webpage_in_realtime_31"></a>Question: Which panel in Chrome DevTools should you use to view and modify the CSS styles of a webpage in real-time?</h3>
+<pre><code>In order to view and modify the css of a webpage in real-time, we should utilize the &quot;Elements&quot; panel within xhrome DevTools. This panel offers an interactive interface that allows to inspect and manipulate the HTML and CSS of the page on-the-fly. we can easily view and edit the styles associated with diffetednt elements, experiment with changes and immediately see visual impact on the webpage without realoading the page.
+</code></pre>
+<h3 class="code-line" data-line-start=35 data-line-end=36 ><a id="Situation_You_want_to_test_how_a_webpage_looks_and_behaves_on_different_screen_sizes_35"></a>Situation: You want to test how a webpage looks and behaves on different screen sizes.</h3>
+<h3 class="code-line" data-line-start=36 data-line-end=37 ><a id="Question_Which_panel_in_Chrome_DevTools_should_you_use_to_test_the_responsiveness_of_a_webpage_on_different_screen_sizes_36"></a>Question: Which panel in Chrome DevTools should you use to test the responsiveness of a webpage on different screen sizes?</h3>
+<pre><code>In order to test webpage with different screensizes we need to utilise a fuctionality of &quot;Elements&quot; panel. In elements panel on top left, click on the second icon which says &quot;toggle device toolbar&quot; on hovering on it. 
+By clicking this icon webpage is changed to reponsive page. Click on the &quot;Dimensions&quot; dropdown and change the screen size to desired screen/mobile size.
+</code></pre>

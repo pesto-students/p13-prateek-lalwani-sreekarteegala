@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strong Password</title>
+    <script src="./script.js" defer></script>
+
+    <style>
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .row label {
+            flex-basis: 10%;
+            /* text-align: right; */
+            margin-right: 10px;
+        }
+
+        .row input {
+            flex-basis: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Strong Password Generator </h1>
+    <form>
+        <div class="row">
+            <label>Password: </label>
+            <input type="password" name="pwd" id="pwd">
+        </div>
+        <div class="row">
+            <label>Confirm Password: </label>
+            <input type="password" name="pwd" id="confirmPwd">
+        </div>
+        <p id="error"></p>
+        <button type="button" onclick="isStrongPassword()" id="button">Submit</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+div {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+div label {
+    flex-basis: 10%
+}
+
+label[class*="comments"] {
+    display: flex;
+    align-items: end;
+}
+
+button{
+    padding: 10px;
+    width: auto;
+}
+
+.required:after {
+    content: " *";
+    color: red;
+}
+
+label+input {
+    background-color: rgb(219, 241, 248);
+}

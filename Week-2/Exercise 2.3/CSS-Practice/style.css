@@ -1,0 +1,40 @@
+header {
+    font-family: Arial;
+    font-size: 16pt;
+    color: blue;
+    font-style: italic;
+}
+
+body {
+    width: 600px;
+    height: 280px;
+    border: 2px solid blue;
+    padding: 5px;
+    background-color: #F0F0F0;
+}
+
+.p1 {
+    background-color: yellow;
+    float: left;
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.p3 {
+    background-color: orange;
+    padding: 10px;
+    width: 200px;
+    position: absolute;
+    left: 110px;
+    top: 200px;
+}
+
+.p4 {
+    background-color: rgb(255, 80, 0);
+    color: white;
+    float: right;
+    padding: 10px;
+    width: 200px;
+    margin: 20px 40px 0 0;
+}
