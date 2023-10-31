@@ -1,28 +1,22 @@
-async function getExchangeRates(currencyCode) {
-    let apiUrl = "https://api.exchangerate.host/latest";
-
-    try {
-        const data = await fetch(apiUrl);
-        const outputData = await data.json();
-
-        return outputData.rates[currencyCode.toUpperCase()];
-    } catch (ex) {
-        console.error(ex);
-        return null;
-    }
-}
-
 const countryCode = 'usd';
 
-getExchangeRates(countryCode)
+// Promise to return ExchangeRates in json format
+const getExchangeRates = new Promise((resolve, reject) => {
+    fetch("https://api.exchangerate.host/latest")
+        .then((resp) => resolve(resp.json()))
+        .catch(() => reject(null));
+});
+
+// Using above promise to get ExchangeRate of a selected Country 
+getExchangeRates
+    .then((resp) => resp.rates[countryCode.toUpperCase()])
     .then((rate) => {
         if (typeof rate != "undefined")
-            console.log(`Exchange rate for ${countryCode}: ${rate}`);
+            console.log(`Exchange rate for ${countryCode.toUpperCase()}: ${rate}`);
         else {
-            console.log(`Invalid Country Code: ${countryCode}.`);
+            console.log(`Invalid Country Code: ${countryCode.toUpperCase()}.`);
         }
     })
     .catch((error) => {
-        console.log(error)
+        console.log(`Error occured while fetching ExchangeRates for Country: ${countryCode.toUpperCase()}.`);
     });
-
