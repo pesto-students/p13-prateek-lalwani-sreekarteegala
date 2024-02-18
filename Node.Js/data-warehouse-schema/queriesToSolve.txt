@@ -1,0 +1,44 @@
+
+
+1. Find the item that has the minimum weight.
+    select min(weight) from items;
+
+
+2. Find the different warehouses in "Pune".
+
+    select * from warehouses where location = 'pune';
+
+3. Find the details of items ordered by a customer named "Mr. Patil".
+
+    select o.ono, o.cno, c.cname, c.addr, c.city_id, oi.item_id, oi.quantity, i.description, i.weight, i.cost, o.createdAt, o.updatedAt
+    from orders o
+    join customers c on c.cno = o.cno
+    join order_items oi on oi.ono = o.ono
+    join items i on i.id = oi.item_id
+    where c.cname = 'Mr. Patil'
+
+4. Find a Warehouse that has the maximum number of stores.
+
+    select wh.id, wh.wh_name, COUNT(s.id) AS num_stores
+    from warehouses wh 
+    join stores s on wh.id = s.wh_id
+    group by wh.id, wh.wh_name
+    order by num_stores DESC
+    limit 1;
+
+5. Find an item that is ordered for a minimum number of times.
+
+    select i.id, description, COUNT(ono) AS num_orders
+    from items i
+    left join order_items oi on i.id = oi.item_id
+    group by i.id, i.description
+    order by num_orders ASC
+    limit 1;
+
+6. Find the detailed orders given by each customer.
+
+    select c.cname, o.ono, o.createdAt, i.description, oi.quantity
+    from customers c 
+    join orders o on c.cno = o.cno
+    join order_items oi on o.ono = oi.ono
+    join items i on oi.item_id = i.id;
